@@ -1,0 +1,48 @@
+/* Enhancements for larger screens (the base styles in style.css are the phone layout). */
+
+@media (min-width: 640px) {
+  :root { --gutter: 28px; }
+  .grid--cards { grid-template-columns: repeat(2, 1fr); }
+  .demo-list { grid-template-columns: repeat(2, 1fr); }
+  .btn-row--inline { grid-template-columns: repeat(2, 1fr); }
+  .hero-cta { grid-template-columns: repeat(2, auto); max-width: none; justify-content: start; }
+  .hero-cta .btn { width: auto; }
+  .btn-row .btn { width: 100%; }
+}
+
+@media (min-width: 768px) {
+  .brand img { height: 32px; }
+  .menu-btn { display: none; }
+  .header-bar { flex-wrap: nowrap; gap: 24px; }
+  .nav { display: block; flex-basis: auto; order: 2; margin: 0 auto 0 0; border: 0; }
+  .nav ul { display: flex; gap: 4px; padding: 0; }
+  .nav a { padding: 0 14px; }
+  .nav a[aria-current="page"] { box-shadow: none; padding-left: 14px; background: var(--brand-soft); }
+  .header-tools { order: 3; }
+  .footer-grid { grid-template-columns: 1fr auto; align-items: center; }
+  .hero { grid-template-columns: 1.15fr .85fr; align-items: center; padding-block: 56px 40px; }
+  .scan-wrap { max-width: 1040px; margin-inline: auto; width: 100%; }
+  .test-card .btn-row { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 1024px) {
+  .grid--cards { grid-template-columns: repeat(3, 1fr); }
+  .scan-wrap { grid-template-columns: 1.15fr 1fr; align-items: start; gap: 20px; padding-block: 36px 52px; }
+  .scan-hero { grid-column: 1 / -1; }
+  .scan-wrap .card + .card { margin-top: 0; }
+  .scan-hero h1 { font-size: 3.4rem; }
+}
+
+@media (min-width: 1440px) {
+  html { font-size: 106%; }
+}
+
+/* Very small phones (320px) */
+@media (max-width: 359px) {
+  :root { --gutter: 14px; }
+  .brand img { height: 24px; }
+  .lang select { min-width: 56px; max-width: 100px; padding: 0 22px 0 32px; font-size: .85rem; }
+  .lang .icon { left: 9px; }
+  .scan-hero { padding: 22px 18px; }
+  .card { padding: 18px 16px; }
+}

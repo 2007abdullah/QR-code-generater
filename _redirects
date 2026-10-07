@@ -1,0 +1,15 @@
+# Netlify. The first matching rule wins. 302 = temporary, so QR targets can change later.
+/q/SD   /scan/safety-detect?src=qr   302
+/q/sd   /scan/safety-detect?src=qr   302
+/q/HC   /scan/home-check?src=qr      302
+/q/hc   /scan/home-check?src=qr      302
+/q/RT   /scan/rapid-test?src=qr      302
+/q/rt   /scan/rapid-test?src=qr      302
+/q/*    /tutorials?ref=unknown-qr    302
+
+# One scan template serves every product (URL stays /scan/<slug>)
+/scan/*      /scan.html     200
+/tutorials   /tutorials.html 200
+/about       /about.html     200
+/contact     /contact.html   200
+/privacy     /privacy.html   200

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 36" role="img" aria-label="ScanGuide">
+  <title>ScanGuide</title>
+  <g fill="none" stroke="#0B5D7A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 12V6a2 2 0 0 1 2-2h6M24 4h6a2 2 0 0 1 2 2v6M32 24v6a2 2 0 0 1-2 2h-6M12 32H6a2 2 0 0 1-2-2v-6"/>
+  </g>
+  <circle cx="18" cy="18" r="5" fill="#0B5D7A"/>
+  <text x="44" y="25" font-family="'Avenir Next','Segoe UI',system-ui,-apple-system,Roboto,sans-serif" font-size="22" font-weight="800" letter-spacing="-0.6" fill="#14212B">Scan<tspan fill="#0B5D7A">Guide</tspan></text>
+</svg>

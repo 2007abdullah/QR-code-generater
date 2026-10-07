@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Privacy | ScanGuide</title>
+<meta name="description" content="How the ScanGuide demo handles location, video and preferences.">
+<link rel="canonical" href="https://scanguide-demo.vercel.app/privacy">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b5d7a">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/responsive.css">
+<script type="module" src="/js/app.js"></script>
+</head>
+<body data-page="privacy">
+<a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main" tabindex="-1" class="container prose">
+<h1>Privacy</h1>
+<p>This is a short demo privacy page that explains how the project is built. It is not legal advice.</p>
+<h2>Your location</h2>
+<ul>
+  <li>Location is requested only after you tap the share button, never when the page loads.</li>
+  <li>Your coordinates are not sent to the website backend. This demo has no backend that receives them.</li>
+  <li>Your coordinates are not stored: not on a server, not in local storage, not in cookies.</li>
+  <li>Your coordinates are not included in analytics events.</li>
+  <li>The location link only leaves your browser when you choose WhatsApp, SMS or copy. From then on it is handled by the app you chose.</li>
+</ul>
+<p>Note that visiting any website lets the host see technical connection data such as an approximate network location from your IP address. That is separate from the precise location your browser shares on request.</p>
+<h2>Video</h2>
+<ul>
+  <li>Videos use YouTube privacy-enhanced embedding (youtube-nocookie.com).</li>
+  <li>The video player is not loaded until you press play. After that, YouTube handles the playback under its own terms.</li>
+</ul>
+<h2>Preferences</h2>
+<ul>
+  <li>The only thing saved on your device is your chosen language (in local storage, key <code>scanguide_lang</code>).</li>
+</ul>
+<p class="notice">Production privacy and legal wording must be reviewed by the client and a qualified professional before launch.</p>
+</main>
+<footer id="site-footer"></footer>
+</body>
+</html>

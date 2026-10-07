@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>ScanGuide</title>
+<meta name="robots" content="noindex, follow">
+<link id="canonical" rel="canonical" href="https://scanguide-demo.vercel.app/tutorials">
+<meta name="description" content="ScanGuide product tutorial and location sharing.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b5d7a">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/responsive.css">
+<script type="module" src="/js/app.js"></script>
+</head>
+<body data-page="scan">
+<a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main" tabindex="-1" class="container scan-wrap">
+  <section class="scan-hero frame frame--scan" aria-labelledby="product-name">
+    <p class="eyebrow" data-i18n="scanned">You scanned</p>
+    <h1 id="product-name">&nbsp;</h1>
+    <div class="type"><span class="pill" id="product-type"></span></div>
+    <p class="desc" id="product-desc"></p>
+  </section>
+
+  <section class="card video-card" data-section="video" aria-labelledby="video-title">
+    <h2 id="video-title" data-i18n="watchTutorial">Watch tutorial</h2>
+    <div id="video-mount" class="video-mount"></div>
+    <div class="video-meta"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#globe"></use></svg><span id="video-lang"></span></div>
+    <p id="video-fallback" class="video-note" hidden></p>
+    <p class="video-note" data-i18n="subtitlesNote"></p>
+  </section>
+
+  <section class="card loc-card" data-section="location" aria-labelledby="loc-title">
+    <h2 id="loc-title"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#pin"></use></svg><span data-i18n="locTitle">Share your location</span></h2>
+    <p class="lead" data-i18n="locDesc"></p>
+    <button type="button" id="share-location" class="btn"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#pin"></use></svg><span data-i18n="shareLocation">Share my location</span></button>
+    <div id="loc-status" class="status" role="status" aria-live="polite"></div>
+    <div id="loc-actions" hidden>
+      <div id="loc-preview" class="preview"><strong data-i18n="preview"></strong><span></span></div>
+      <div class="loc-actions">
+        <a id="share-wa" class="btn" rel="noopener noreferrer" target="_blank"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#whatsapp"></use></svg><span data-i18n="whatsapp"></span></a>
+        <a id="share-sms" class="btn btn--secondary"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#sms"></use></svg><span data-i18n="sms"></span></a>
+        <button type="button" id="share-copy" class="btn btn--secondary"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#copy"></use></svg><span data-i18n="copy"></span></button>
+        <button type="button" id="clear-location" class="btn btn--ghost btn--sm" data-i18n="clearLocation"></button>
+      </div>
+    </div>
+    <div class="privacy-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#shield"></use></svg><p data-i18n="privacyNote"></p></div>
+    <button type="button" id="open-live" class="btn btn--secondary live-link"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#live"></use></svg><span data-i18n="liveLocation"></span></button>
+  </section>
+</main>
+
+<dialog id="live-guide" aria-labelledby="live-title">
+  <div class="dialog-head">
+    <h2 id="live-title" data-i18n="liveTitle">Share live location</h2>
+    <button type="button" class="close-btn" data-close data-i18n-label="close" aria-label="Close"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#close"></use></svg></button>
+  </div>
+  <div class="dialog-body">
+    <p class="muted" data-i18n="liveIntro"></p>
+    <section aria-labelledby="wa-title">
+      <h3 id="wa-title" data-i18n="waTitle"></h3>
+      <ol id="wa-steps"></ol>
+      <a id="open-wa" class="btn btn--sm" href="https://wa.me/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#whatsapp"></use></svg><span data-i18n="openWhatsApp"></span></a>
+    </section>
+    <section aria-labelledby="gm-title">
+      <h3 id="gm-title" data-i18n="gmTitle"></h3>
+      <ol id="gm-steps"></ol>
+      <a id="open-maps" class="btn btn--sm" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/icons/sprite.svg#pin"></use></svg><span data-i18n="openMaps"></span></a>
+    </section>
+    <p class="muted" data-i18n="liveNote"></p>
+  </div>
+</dialog>
+<footer id="site-footer"></footer>
+<noscript><p class="container notice">ScanGuide needs JavaScript for the video, language and location features.</p></noscript>
+</body>
+</html>

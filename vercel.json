@@ -1,0 +1,31 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/q/SD", "destination": "/scan/safety-detect?src=qr", "statusCode": 302 },
+    { "source": "/q/sd", "destination": "/scan/safety-detect?src=qr", "statusCode": 302 },
+    { "source": "/q/HC", "destination": "/scan/home-check?src=qr", "statusCode": 302 },
+    { "source": "/q/hc", "destination": "/scan/home-check?src=qr", "statusCode": 302 },
+    { "source": "/q/RT", "destination": "/scan/rapid-test?src=qr", "statusCode": 302 },
+    { "source": "/q/rt", "destination": "/scan/rapid-test?src=qr", "statusCode": 302 },
+    { "source": "/q/:code", "destination": "/tutorials?ref=unknown-qr", "statusCode": 302 }
+  ],
+  "rewrites": [
+    { "source": "/scan/:slug", "destination": "/scan.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" },
+        { "key": "Permissions-Policy", "value": "geolocation=(self), camera=(), microphone=(), payment=()" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    },
+    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+    { "source": "/qr/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }] },
+    { "source": "/(css|js)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }] },
+    { "source": "/products.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "_help": "THE ONLY FILE YOU EDIT TO CHANGE VIDEOS OR PRODUCTS. Each product has a permanent QR code (qrCode) and a slug. Videos are YouTube IDs per language. Texts can be a plain string or an object with one entry per language (en is the fallback).",
+  "site": {
+    "baseUrl": "https://scanguide-demo.vercel.app",
+    "defaultLanguage": "en"
+  },
+  "products": [
+    {
+      "slug": "safety-detect",
+      "qrCode": "SD",
+      "name": "Safety Detect",
+      "type": {
+        "en": "Rapid safety test",
+        "nl": "Snelle veiligheidstest",
+        "es": "Prueba rápida de seguridad",
+        "fr": "Test de sécurité rapide",
+        "de": "Sicherheits-Schnelltest",
+        "pt": "Teste rápido de segurança"
+      },
+      "description": {
+        "en": "A simple demonstration product for the ScanGuide portfolio.",
+        "nl": "Een eenvoudig demonstratieproduct voor het ScanGuide-portfolio.",
+        "es": "Un producto de demostración sencillo para el portafolio de ScanGuide.",
+        "fr": "Un produit de démonstration simple pour le portfolio ScanGuide.",
+        "de": "Ein einfaches Demoprodukt für das ScanGuide-Portfolio.",
+        "pt": "Um produto de demonstração simples para o portfólio da ScanGuide."
+      },
+      "languages": ["en", "nl", "es", "fr", "de", "pt"],
+      "videos": {
+        "en": "M7lc1UVf-VE",
+        "nl": "M7lc1UVf-VE",
+        "es": "M7lc1UVf-VE",
+        "fr": "M7lc1UVf-VE",
+        "de": "M7lc1UVf-VE",
+        "pt": "M7lc1UVf-VE"
+      },
+      "poster": "/assets/posters/safety-detect.svg",
+      "theme": { "accent": "#0A7A5B", "soft": "#E3F4EE" },
+      "menu": ["video", "location"]
+    },
+    {
+      "slug": "home-check",
+      "qrCode": "HC",
+      "name": "Home Check",
+      "type": {
+        "en": "At-home check kit",
+        "nl": "Controleset voor thuis",
+        "es": "Kit de control en casa",
+        "fr": "Kit de contrôle à domicile",
+        "de": "Check-Set für zuhause",
+        "pt": "Kit de verificação em casa"
+      },
+      "description": {
+        "en": "A guided home check with a short step-by-step video.",
+        "nl": "Een begeleide controle thuis met een korte stap-voor-stap video.",
+        "es": "Una revisión guiada en casa con un breve vídeo paso a paso.",
+        "fr": "Un contrôle guidé à domicile avec une courte vidéo pas à pas.",
+        "de": "Ein geführter Check zuhause mit kurzem Schritt-für-Schritt-Video.",
+        "pt": "Uma verificação guiada em casa com um vídeo curto passo a passo."
+      },
+      "languages": ["en", "nl", "es", "fr", "de", "pt"],
+      "videos": {
+        "en": "M7lc1UVf-VE",
+        "nl": "M7lc1UVf-VE",
+        "es": "M7lc1UVf-VE",
+        "fr": "M7lc1UVf-VE",
+        "de": "M7lc1UVf-VE",
+        "pt": "M7lc1UVf-VE"
+      },
+      "poster": "/assets/posters/home-check.svg",
+      "theme": { "accent": "#3F51C1", "soft": "#E8EBFA" },
+      "menu": ["video", "location"]
+    },
+    {
+      "slug": "rapid-test",
+      "qrCode": "RT",
+      "name": "Rapid Test",
+      "type": {
+        "en": "Fast result test",
+        "nl": "Test met snel resultaat",
+        "es": "Prueba de resultado rápido",
+        "fr": "Test à résultat rapide",
+        "de": "Test mit schnellem Ergebnis",
+        "pt": "Teste de resultado rápido"
+      },
+      "description": {
+        "en": "Read a result in minutes. Portuguese video is not published yet, so English is shown.",
+        "nl": "Lees binnen enkele minuten een resultaat af. De Portugese video is nog niet beschikbaar, dus Engels wordt getoond.",
+        "es": "Lee un resultado en minutos. El vídeo en portugués aún no está publicado, así que se muestra el inglés.",
+        "fr": "Lisez un résultat en quelques minutes. La vidéo en portugais n'est pas encore publiée, l'anglais est donc affiché.",
+        "de": "Ergebnis in wenigen Minuten ablesen. Das portugiesische Video ist noch nicht veröffentlicht, daher wird Englisch gezeigt.",
+        "pt": "Leia um resultado em minutos. O vídeo em português ainda não foi publicado, por isso é mostrado o inglês."
+      },
+      "languages": ["en", "nl", "es", "fr", "de"],
+      "videos": {
+        "en": "M7lc1UVf-VE",
+        "nl": "M7lc1UVf-VE",
+        "es": "M7lc1UVf-VE",
+        "fr": "M7lc1UVf-VE",
+        "de": "M7lc1UVf-VE"
+      },
+      "poster": "/assets/posters/rapid-test.svg",
+      "theme": { "accent": "#A02D7E", "soft": "#F8E6F1" },
+      "menu": ["video", "location"]
+    }
+  ]
+}
