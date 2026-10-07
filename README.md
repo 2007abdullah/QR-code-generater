@@ -132,7 +132,7 @@ Honest limits: the host still sees normal connection data (e.g. IP address) like
 2. In Vercel: **Add New > Project**, import the repo.
 3. Framework preset: **Other**. Build command: empty. Output directory: `.` (root).
 4. Deploy. `vercel.json` is picked up automatically.
-5. Set your real domain, then rerun `python3 tools/generate-qr.py https://your-domain.com` and update the `https://scanguide-demo.vercel.app` URLs in the HTML meta tags, `sitemap.xml` and `robots.txt`.
+5. The current deployment URL is `https://qr-code-demo-blush.vercel.app`. When using a different Vercel URL or custom domain, update the canonical/social metadata, `products.json`, `sitemap.xml` and `robots.txt`, then regenerate the printable QR codes with `python tools/generate-qr.py https://your-domain.com`.
 
 ## 12. Deploy to Netlify
 
@@ -186,7 +186,7 @@ Geolocation, clipboard and many app links need **HTTPS**, so test on a real depl
 
 ## 17. Production TODOs
 
-- Replace the placeholder video IDs, posters, product copy, About/Contact/Privacy text and the `scanguide-demo.vercel.app` URLs.
+- Replace the placeholder video IDs, posters, product copy and About/Contact/Privacy text before presenting this demo as production content.
 - Replace the poster SVGs in `VideoObject` data (`tutorials.html`) with real thumbnails (JPG/WebP), real upload dates and descriptions. Search engines need real data; the current values are placeholders.
 - Confirm the live-location steps against current WhatsApp and Google Maps versions on iOS and Android; menu names change.
 - Decide on analytics (below), cookie/consent needs, and an incident/contact process.

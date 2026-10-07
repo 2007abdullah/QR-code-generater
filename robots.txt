@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://scanguide-demo.vercel.app/sitemap.xml
+Sitemap: https://qr-code-demo-blush.vercel.app/sitemap.xml

@@ -1,7 +1,7 @@
 {
   "_help": "THE ONLY FILE YOU EDIT TO CHANGE VIDEOS OR PRODUCTS. Each product has a permanent QR code (qrCode) and a slug. Videos are YouTube IDs per language. Texts can be a plain string or an object with one entry per language (en is the fallback).",
   "site": {
-    "baseUrl": "https://scanguide-demo.vercel.app",
+    "baseUrl": "https://qr-code-demo-blush.vercel.app",
     "defaultLanguage": "en"
   },
   "products": [
